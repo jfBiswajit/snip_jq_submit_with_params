@@ -25,7 +25,6 @@
       $.ajax({
         type: 'POST',
         url: '{{ route("test") }}',
-        dataType: 'json',
         data: `${formData}&_token={{ csrf_token() }}`,
 
         error() {
